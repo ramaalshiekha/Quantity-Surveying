@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حساب كميات المواد لمهندس مدني</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>حساب كميات المواد لمهندس مدني</h1>
+      <form id="calculatorForm">
+        <label for="length">الطول (بالمتر):</label>
+        <input type="number" id="length" required />
+
+        <label for="width">العرض (بالمتر):</label>
+        <input type="number" id="width" required />
+
+        <label for="depth">العمق (بالمتر):</label>
+        <input type="number" id="depth" required />
+
+        <button type="submit">احسب</button>
+      </form>
+      <div id="results"></div>
+      <canvas id="materialChart" width="400" height="400"></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
